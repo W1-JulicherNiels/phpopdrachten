@@ -1,0 +1,40 @@
+aside
+{
+    width: 30%;
+    padding-top: 50px;
+    paddinig-left: 20px;
+    background-color: palegoldenrod;
+}
+body
+{
+    margin: 0px;
+}
+header
+{
+    text-align: right;
+    background-color: powderblue;
+    height: 100px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+h1
+{
+    padding-right: 40px;
+}
+h2
+{
+    margin-top: 0px;
+}
+.menu
+{
+    margin-left: 20px;
+}
+.uit
+{
+    display: flex;
+}
+main
+{
+    padding-top: 50px;
+    padding-left: 50px;
+}

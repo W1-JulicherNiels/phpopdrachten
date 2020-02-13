@@ -1,9 +1,9 @@
 <?php
 /**
  * User: Niels Julicher
- * Date: 11-2-2020
- * Time: 12:30
- * File: opdracht2.1.php
+ * Date: Date
+ * Time: Time
+ * File: index.php
  */
 ?>
 
@@ -13,12 +13,21 @@
     <meta name="description" content="...">
     <meta name="keywords" content="...">
     <meta charset="UTF-8">
-    <link href="CSS/style.css">
+    <link href="../CSS/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <?php
-        echo("<p>Hello World!</p>");
-    ?>
-    <a href="../index.php">Terug</a>
+<header>
+    <h1 class="titlephp"><?php echo "Uitwerking van PHP-opdrachten"; ?></h1>
+</header>
+<div class="uit">
+    <aside>
+        <h2 class="menu">Menu</h2>
+        <a class="menu" href="../index.php">Terug</a>
+    </aside>
+    <main id="wrapper">
+        <h2>Uitwerkingen</h2>
+        <p>Hello World!</p>
+    </main>
+</div>
 </body>
 </html>
