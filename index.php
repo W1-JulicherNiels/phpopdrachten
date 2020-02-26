@@ -16,9 +16,9 @@
     <link href="CSS/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h1 class="titlephp"><?php echo "Uitwerking van PHP-opdrachten"; ?></h1>
-</header>
+<?php
+include("includes/header.php");
+?>
 <div class="uit">
 <aside>
     <h2 class="menu">Menu</h2>
@@ -37,13 +37,13 @@
         <li>Hoofdstuk 3
             <ul>
                 <li>
-                    <a href="">Opdracht 3.1</a>
+                    <a href="hoofdstuk3/opdracht3.1.php">Opdracht 3.1</a>
                 </li>
                 <li>
-                    <a href="">Opdracht 3.2</a>
+                    <a href="hoofdstuk3/Opdracht3.2.php">Opdracht 3.2</a>
                 </li>
                 <li>
-                    <a href="">Opdracht 3.3</a>
+                    <a href="hoofdstuk3/opdracht3.3.php">Opdracht 3.3</a>
                 </li>
             </ul>
         </li>
@@ -87,5 +87,8 @@
     <h2>Uitwerkingen</h2>
 </main>
 </div>
+<?php
+include("includes/footer.php");
+?>
 </body>
 </html>
