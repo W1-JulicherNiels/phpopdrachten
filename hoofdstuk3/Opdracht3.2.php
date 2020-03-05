@@ -98,7 +98,11 @@
         }
         else if($countryName == "Zweden" && $currentAge >= 20)
         {
-            echo("<p>Je mag hier sterke alcogol drinken</p>");
+            echo("<p>Je mag hier sterke alcohol drinken</p>");
+        }
+        else if($countryName == "Makanda" && $currentAge >= 13)
+        {
+            echo("<p>Je mag hier alcohol drinken</p>");
         }
         else
         {

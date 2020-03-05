@@ -16,9 +16,9 @@
     <link href="../CSS/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h1 class="titlephp"><?php echo "Uitwerking van PHP-opdrachten"; ?></h1>
-</header>
+<?php
+include("../includes/header.php");
+?>
 <div class="uit">
     <aside>
         <h2 class="menu">Menu</h2>
@@ -27,9 +27,13 @@
     <main id="wrapper">
         <h2>Uitwerkingen</h2>
         <?php
-        echo("<p>Hello World!</p>");
+        include("script.php");
+        echo("<p>Voor het vak <span class='dik'>" . $coursName . "</span> heb je <span class='dik'>" . $teacherName . "</span> als docent.</p>");
         ?>
     </main>
 </div>
+<?php
+include("../includes/footer.php");
+?>
 </body>
 </html>
