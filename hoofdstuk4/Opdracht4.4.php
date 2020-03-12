@@ -1,9 +1,9 @@
 <?php
 /**
  * User: Niels Julicher
- * Date: 03-03-2020
- * Time: 10:00
- * File: Opdracht4.2.php
+ * Date: 12-03-2020
+ * Time: 11:00
+ * File: Opdracht4.4.php
  */
 ?>
 
@@ -26,9 +26,9 @@ include("../includes/header.php");
     </aside>
     <main id="wrapper">
         <h2>Uitwerkingen</h2>
+        <h3>Weekkalender komende week:</h3>
         <?php
-        include("script.php");
-        echo("<p>Voor het vak <span class='dik'>" . $coursName . "</span> heb je <span class='dik'>" . $teacherName . "</span> als docent.</p>");
+        include("script4.4.php");
         ?>
     </main>
 </div>
@@ -37,3 +37,4 @@ include("../includes/footer.php");
 ?>
 </body>
 </html>
+
