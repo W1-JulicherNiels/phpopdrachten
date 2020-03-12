@@ -8,7 +8,6 @@
 ?>
 
 <?php
-$datumAlsGetal = strtotime("now");
 $dagNamen = array("zondag", "maandag" , "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag");
 
 for($c = 0; $c <= 7; $c++) {
