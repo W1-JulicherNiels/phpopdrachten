@@ -53,7 +53,8 @@ while($year >= 2000 && $age >= 0)
 }
 
 $task7 = " ";
-for($year1 = 2020, $age1 = 20; $year1 >= 2000 && $age1 >= 0; $year1-- && $age1--)
+$age1 = 20;
+for($year1 = 2020; $year1 >= 2000 && $age1 >= 0; $year1--)
 {
     if($year1 == 2020 && $age1 == 20)
         $task7 = $task7 . "<p> In " . $year1 . " word ik " . $age1 . " jaar oud </p>";
@@ -71,5 +72,6 @@ for($year1 = 2020, $age1 = 20; $year1 >= 2000 && $age1 >= 0; $year1-- && $age1--
         $task7 = $task7 . "<p> In " . $year1 . " ben ik geboren en was ik een baby </p>";
     else
         $task7 = $task7 . "<p> In " . $year1 . " was ik " . $age1 . " jaar oud </p>";
+    $age1--;
 }
 ?>
