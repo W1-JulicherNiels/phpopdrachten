@@ -81,6 +81,14 @@ include("includes/header.php");
                 </li>
             </ul>
         </li>
+        <br>
+        <li>Eindopdracht
+            <ul>
+                <li>
+                    <a href="eindopdracht/login.php">Eindopdracht</a>
+                </li>
+            </ul>
+        </li>
     </ul>
 </aside>
 <main id="wrapper">
