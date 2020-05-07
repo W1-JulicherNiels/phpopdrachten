@@ -89,6 +89,7 @@ include("includes/header.php");
                 </li>
             </ul>
         </li>
+        <br>
         <li>Hoofdstuk 6
             <ul>
                 <li>
@@ -96,6 +97,14 @@ include("includes/header.php");
                 </li>
                 <li>
                     <a href="hoofdstuk6/opdracht62.php">Opdracht 6.2</a>
+                </li>
+            </ul>
+        </li>
+        <br>
+        <li>Hoofdstuk 7
+            <ul>
+                <li>
+                    <a href="hoofdstuk7/opdracht7.1.php">Opdracht 7.1</a>
                 </li>
             </ul>
         </li>
