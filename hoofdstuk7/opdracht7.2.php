@@ -43,14 +43,13 @@ include("../includes/header.php");
         echo "database connectie gelukt";
         ?>
         <br>
-        <br>
         <?php
         // Uitvoeren van een SQl query
         try
         {
-        // Query schrijven
+            // Query schrijven
             $sql = 'SELECT * FROM joke';
-        // Query uitvoeren
+            // Query uitvoeren
             $result = $pdo->query($sql);
         }
         catch (PDOException $e)
@@ -58,16 +57,47 @@ include("../includes/header.php");
             echo 'Er is een probleem met ophalen van jokes: ' . $e->getMessage();
             exit();
         }
+
         // Lege Array aanmaken voor de results
         $aJokes = array();
         // Door de results heen loopen via een while
         while ($row = $result->fetch(PDO::FETCH_ASSOC))
         {
-        // Result wegschrijven in de $aJokes array
+            // Result wegschrijven in de $aJokes array
             $aJokes[] = $row;
         }
-        // Tonen van de inhoud van aJokes
-        var_dump($aJokes);
+
+
+        // Tonen jokes in een tabel
+        echo("<table>");
+
+        echo("<tr>");
+        echo("<th>ID</th>");
+        echo("<th>Joketext</th>");
+        echo("<th>Jokeclou</th>");
+        echo("<th>Jokedate</th>");
+        echo("</tr>");
+
+        $counter = 0;
+        while($counter < count($aJokes) )
+        {
+            echo("<tr>");
+            echo("    <td>");
+            echo($aJokes[$counter]["id"]);
+            echo("    </td>");
+            echo("    <td>");
+            echo($aJokes[$counter]["joketext"]);
+            echo("    </td>");
+            echo("    <td>");
+            echo($aJokes[$counter]["jokeclou"]);
+            echo("    </td>");
+            echo("    <td>");
+            echo($aJokes[$counter]["jokedate"]);
+            echo("    </td>");
+            echo("</tr>");
+            $counter++;
+        }
+        echo("</table>");
         ?>
     </main>
 </div>
